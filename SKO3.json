@@ -20,7 +20,7 @@
             "Type": "AWS::EC2::Instance",
             "Properties": {
                 "InstanceType": "t2.micro",
-                "ImageId": "ami-03ba45fe635adedff",
+                "ImageId": "ami-089858eaab415ac21",
                 "UserData": {
                     "Fn::Base64": {
                         "Fn::Sub": "#!/bin/bash\nyum -y update\n\n# start server\nservice httpd start\nchkconfig httpd on\n"
